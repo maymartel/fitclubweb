@@ -1,0 +1,83 @@
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+
+    &__horarios {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+
+        &__wsp {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__redes {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .footer {
+        background-color: #D0D7DA;
+        font-size: 12px;
+        padding: 15px;
+        column-gap: 15px;
+
+        .tamaño-logos {
+            width: 30px;
+        }
+    }
+    
+
+
+}
+
+
+@media only screen and (min-width: 600px) {
+
+    .footer {
+        background-color: #D0D7DA;
+        font-size: 15px;
+        padding: 15px;
+
+        .tamaño-logos {
+            width: 40px;
+        }
+    
+        &__redes img:hover {
+            transform: scale(1.1);
+            transition-duration: 500ms;
+        }
+    }
+    
+
+
+}
+
+@media only screen and (min-width: 992px) {
+
+
+    .footer {
+        background-color: #D0D7DA;
+        font-size: 20px;
+        padding: 15px;
+
+        .tamaño-logos {
+            width: 50px;
+        }
+    }
+    
+
+}
+        
+
+

@@ -1,0 +1,49 @@
+.clases {
+    position: relative;
+    width: 100%;
+
+    &__nombre {
+        color: #FBB507;
+        font-size: 90px;
+        position: absolute;
+        top: 90px;
+        left: 400px;
+
+    }
+
+    &__foto {
+        display: grid;
+        grid-template-rows: 1fr;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .clases__nombre {
+        font-size: 30px;
+        top: 50px;
+        left: 230px;
+    }
+
+    .clases__fotos{
+        display: grid;
+        grid-template-rows: 1fr;
+    }
+
+}
+
+@media only screen and (min-width: 600px) {
+
+    .clases__nombre {
+        font-size: 50px;
+        top: 50px;
+        left: 250px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .clases__nombre {
+        font-size: 80px;
+        top: 90px;
+        left: 500px;
+    }
+}

@@ -1,0 +1,487 @@
+@import "footer";
+@import "nosotros";
+@import "clases";
+@import "principal";
+@import "planes";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Saira', sans-serif;
+    max-width: 100%;
+}
+
+header {
+    padding: 20px 50px;
+    background-color: #FBB507;
+    font-size: 20px;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    width: 100vw;
+
+    .navbar-nav {
+        padding-left: 170px;
+    }
+}
+
+
+h1 {
+    color: #FBB507;
+    font-size: 55px;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-weight: bolder;
+    padding-left: 20px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Saira', sans-serif;
+    font-size: 24px;
+}
+
+header a:hover {
+    transform: scale(1.1);
+    color: white;
+}
+
+h3 {
+    color: rgba(0, 0, 0, 0.7);
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+th {
+    color: #1B8C92;
+}
+
+footer {
+    background-color: #D0D7DA;
+    font-size: 15px;
+    padding: 15px;
+}
+
+/*estan en index y nosotros*/
+.titulos-negros {
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-weight: 400;    
+    font-size: 40px;
+    padding: 10px;
+    text-align: center;
+}
+
+/*fondo index - nosotros - sedes - login*/
+.fondo-turquesa {
+    background-color: #1B8C92;
+    width: 100%;
+    padding: 0;
+}
+
+.gradiente-turquesa {    
+    background: linear-gradient(to right, #1B8C92, #065c61);
+}
+
+
+
+@mixin boton ($ancho , $alto , $tamanioTexto) {
+    width: $ancho;
+    height: $alto;
+    font-size: $tamanioTexto;
+    margin: 10px 0px;
+    padding: 0 5px 0 5px;
+    background-color:#FBB507;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Saira', sans-serif;
+    font-weight: bold;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.boton-amarillo {
+    @include boton ( 130px , 30px , 15px);
+}
+
+
+/*nosotros - login*/
+.input-estilo {
+    width: 155px;
+    height: 25px;
+    margin: 5px 0px;
+    padding-left: 7px;
+    background-color:#d8eff0;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Saira', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+/*texto de contacto y sedes*/
+.texto-gris {
+    color: #E2DFDF;
+    font-size: 30px;
+    padding-left: 20px;
+    background: linear-gradient(to right, #1B8C92, #065c61);
+    font-family: 'Saira', sans-serif;
+    font-weight: bold;
+}
+/*texto de formularios*/
+.texto-saira {
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 20px 0 20px 20px;
+}
+
+.beneficios {
+    display: flex;
+}
+
+.fotos-horizontales {
+    width: 100%;
+}
+
+/*sedes - login - contacto - menu*/
+li{
+    list-style-type: none;
+}
+
+/* flex menu */
+.flex-menu {
+    display: flex;
+    justify-content: center;
+}
+
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.horizontal {
+    display: flex;
+    justify-content: space-around;
+}
+/*nombres de menú*/
+.nombre-menu {
+    margin-left: 10px;
+}
+
+.clases__nombre {
+    font-family: 'Saira', sans-serif;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        padding: 10px 0 10px 0;
+        width: 100vw;
+    }
+
+    .flex-menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    a {
+        font-size: 11px;
+    }
+
+    .imagen-logo {
+        width: 80px;
+    }
+    .contenedor-proxclase {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+
+    .contenedor-funcionalboton {
+        padding: 0px;
+        margin: 0px;
+    } 
+
+    .prox-clase {
+        font-weight: bold;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .funcional {
+        font-size: 15px;
+        padding: 0px;
+    }
+
+    .boton-vivo {
+        width: 70px;
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .beneficios {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .contenedor-kinesio {
+        width: 100%;
+    }
+
+    .contenedor-nutri {
+        width: 100%;
+    }
+    .titulos-beneficios {
+        font-weight: 400;
+        font-size: 20px;
+        padding-top: 5px;
+        text-align: center;
+    }
+
+    footer {
+        background-color: #D0D7DA;
+        font-size: 12px;
+        padding: 15px;
+        column-gap: 15px;
+    }
+    
+    .tamaño-logos {
+        width: 30px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .texto-gris {
+        font-size: 20px;
+    }
+
+    .texto-saira {
+        font-size: 15px;
+    }
+
+    .input-estilo {
+        width: 155px;
+        height: 20px;
+    }
+
+    .boton-amarillo {
+        height: 22px;
+    }
+
+
+    .contenedor-planes {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 350px 350px 350px 350px 350px 350px;
+        grid-template-areas:  "area1" "area2" 
+                            "area3" "area4" 
+                            "area5" "area6";
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+
+    #caja-uno {
+        grid-area: area1;
+    }
+        
+    #caja-dos {
+        grid-area: area2;
+    }
+
+    #caja-tres {
+        grid-area: area3;    
+    }
+
+    #caja-cuatro {
+        grid-area: area4;
+    }
+
+    #caja-cinco {
+        grid-area: area5;
+    }
+        
+    #caja-seis {
+        grid-area: area6;
+    }
+    }
+
+
+@media only screen and (min-width: 600px) {
+
+    .contenedor-funcionalboton {
+        padding: 10px;
+    } 
+
+    .prox-clase {
+        font-weight: bold;
+        font-size: 33px;
+    }
+
+    .funcional {
+        font-size: 28px;
+        padding: 5px;
+    }
+
+    .titulos-beneficios {
+        font-weight: 400;
+        font-size: 40px;
+        padding-top: 5px;
+        text-align: center;
+    }
+
+    footer {
+        background-color: #D0D7DA;
+        font-size: 15px;
+        padding: 15px;
+    }
+    
+    .tamaño-logos {
+        width: 40px;
+    }
+
+    .redes img:hover {
+        transform: scale(1.1);
+        transition-duration: 500ms;
+    }
+    
+    h1 {
+        font-size: 60px;
+    }
+
+
+    .texto-gris {
+        font-size: 25px;
+    }
+
+    .texto-saira {
+        font-size: 20px;
+    }
+
+    .input-estilo {
+        width: 155px;
+        height: 25px;
+    }
+
+    .boton-amarillo {
+        height: 25px;
+    }
+
+    .contenedor-planes {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 350px 350px 350;
+        grid-template-areas:  "area1 area2" 
+                            "area3 area4" 
+                            "area5 area6";
+         justify-content: space-around;
+         margin-top: 20px;
+    }
+
+    #caja-uno {
+        grid-area: area1;
+    }
+        
+    #caja-dos {
+        grid-area: area2;
+    }
+
+    #caja-tres {
+        grid-area: area3;   
+    }
+
+    #caja-cuatro {
+        grid-area: area4;
+    }
+    
+    #caja-cinco {
+        grid-area: area5;
+    }
+        
+     #caja-seis {
+        grid-area: area6;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+    .contenedor-funcionalboton {
+        padding: 18px;
+    } 
+
+    .prox-clase {
+        font-weight: bold;
+        font-size: 33px;
+    }
+
+    .funcional {
+        font-size: 28px;
+        padding: 5px;
+    }
+
+    .titulos-beneficios {
+        font-weight: 400;
+        font-size: 50px;
+        padding-top: 5px;
+        text-align: center;
+    }
+
+    footer {
+        background-color: #D0D7DA;
+        font-size: 20px;
+        padding: 15px;
+    }
+    
+    .tamaño-logos {
+        width: 50px;
+    }
+    .redes img:hover {
+        transform: scale(1.1);
+        transition-duration: 500ms;
+    }
+        
+    h1 {
+        font-size: 50px;
+    }
+    
+    
+    .texto-gris {
+        font-size: 30px;
+    }
+    
+    .texto-saira {
+        font-size: 20px;
+    }
+    
+    .input-estilo {
+        width: 155px;
+        height: 25px;
+    }
+    
+    .boton-amarillo {
+        height: 25px;
+    }
+    
+    
+    .contenedor-planes {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 350px 350px;
+        grid-template-areas:  "area1 area2 area3 area4" 
+                        "area5 area5 area6 area6";
+    }
+
+
+    }
+

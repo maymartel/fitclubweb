@@ -1,0 +1,44 @@
+/*planes*/
+.contenedor-planes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 350px 350px;
+    grid-template-areas:  "area1 area2 area3 area4" 
+                        "area5 area5 area6 area6";
+    justify-content: space-around;
+
+    #caja-uno {
+        grid-area: area1;
+    }
+    
+    #caja-dos {
+        grid-area: area2;
+    }
+    #caja-tres {
+        grid-area: area3;
+    }
+    #caja-cuatro {
+        grid-area: area4;
+    }
+    #caja-cinco {
+        grid-area: area5;
+    }
+    
+    #caja-seis {
+        grid-area: area6;
+    }
+}
+
+
+/*cajas planes*/
+
+.planes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .redondeado {
+        border-radius: 40px;
+    }
+
+}
