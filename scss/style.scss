@@ -138,6 +138,7 @@ footer {
     font-weight: bolder;
     font-size: 20px;
     padding: 20px 0 20px 20px;
+    margin-bottom: 0;
 }
 
 .beneficios {
@@ -215,19 +216,20 @@ li{
 
     .prox-clase {
         font-weight: bold;
-        font-size: 15px;
+        font-size: 20px;
         margin-top: 10px;
     }
 
     .funcional {
-        font-size: 15px;
+        font-size: 18px;
         padding: 0px;
     }
 
-    .boton-vivo {
-        width: 70px;
-        font-size: 10px;
+    .btn {
+        width: 100px;
+        font-size: 13px;
         text-align: center;
+        margin-bottom: 15px;
     }
 
     .beneficios {

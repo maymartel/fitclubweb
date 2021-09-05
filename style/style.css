@@ -58,7 +58,10 @@
 
 .titulo-profes {
   font-size: 50px;
-  padding: 20px; }
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .fondo-prof {
   background-color: #D0D7DA;
@@ -69,7 +72,8 @@
 .texto-nosotros {
   font-family: 'Saira Extra Condensed', sans-serif;
   color: #DBE4E8;
-  padding: 0 15px 0 15px; }
+  padding: 0 15px 5px 15px;
+  margin-bottom: 0; }
 
 @media only screen and (max-width: 600px) {
   .texto-nosotros {
@@ -141,9 +145,9 @@
 
 @media only screen and (max-width: 600px) {
   .clases__nombre {
-    font-size: 30px;
-    top: 50px;
-    left: 230px; }
+    font-size: 35px;
+    top: 35px;
+    left: 130px; }
   .clases__fotos {
     display: grid;
     grid-template-rows: 1fr; } }
@@ -354,7 +358,8 @@ footer {
   color: black;
   font-weight: bolder;
   font-size: 20px;
-  padding: 20px 0 20px 20px; }
+  padding: 20px 0 20px 20px;
+  margin-bottom: 0; }
 
 .beneficios {
   display: flex; }
@@ -412,15 +417,16 @@ li {
     margin: 0px; }
   .prox-clase {
     font-weight: bold;
-    font-size: 15px;
+    font-size: 20px;
     margin-top: 10px; }
   .funcional {
-    font-size: 15px;
+    font-size: 18px;
     padding: 0px; }
-  .boton-vivo {
-    width: 70px;
-    font-size: 10px;
-    text-align: center; }
+  .btn {
+    width: 100px;
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 15px; }
   .beneficios {
     display: grid;
     grid-template-columns: 1fr;

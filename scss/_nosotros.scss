@@ -20,6 +20,9 @@
     @extend .titulos-negros;
     font-size: 50px;
     padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
     }
     
@@ -34,7 +37,8 @@
         font-family: 'Saira Extra Condensed', sans-serif;
         color: #DBE4E8;
         
-        padding: 0 15px 0 15px;
+        padding: 0 15px 5px 15px;
+        margin-bottom: 0;
     } 
 
 @media only screen and (max-width: 600px) {
