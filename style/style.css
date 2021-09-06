@@ -145,10 +145,10 @@
 
 @media only screen and (max-width: 600px) {
   .clases__nombre {
-    font-size: 35px;
-    top: 35px;
-    left: 130px; }
-  .clases__fotos {
+    font-size: 30px;
+    top: 2rem;
+    left: 2rem; }
+  .clases__foto {
     display: grid;
     grid-template-rows: 1fr; } }
 
